@@ -1,6 +1,11 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import { site } from "@/content/site.config";
+
+export const viewport: Viewport = {
+  themeColor: "#08080a",
+  colorScheme: "dark",
+};
 
 export const metadata: Metadata = {
   title: `${site.name} · 后端 / AI Agent`,

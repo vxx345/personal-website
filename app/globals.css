@@ -397,7 +397,7 @@ button {
 .heroPause {
   position: absolute;
   right: 28px;
-  bottom: 44px;
+  bottom: 82px;
   z-index: 4;
   width: 40px;
   height: 40px;
@@ -473,7 +473,7 @@ button {
 /* ---------- music ---------- */
 .musicBtn {
   position: fixed;
-  left: 28px;
+  right: 28px;
   bottom: 28px;
   z-index: 60;
   display: inline-flex;
@@ -834,13 +834,15 @@ footer span {
     padding-bottom: 130px;
   }
 
+  /* 窄屏：暂停键移到左侧，BGM 固定右下角，两者各占一角不重叠 */
   .heroPause {
-    right: 16px;
-    bottom: 128px;
+    right: auto;
+    left: 16px;
+    bottom: 126px;
   }
 
   .musicBtn {
-    left: 16px;
+    right: 16px;
     bottom: 126px;
     height: 38px;
     padding: 0 13px 0 11px;
