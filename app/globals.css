@@ -853,6 +853,10 @@ footer span {
 }
 
 @media (max-width: 640px) {
+  .nav {
+    grid-template-columns: 1fr auto;
+  }
+
   .navLinks {
     display: none;
   }
